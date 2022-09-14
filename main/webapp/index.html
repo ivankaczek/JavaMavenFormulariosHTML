@@ -3,13 +3,13 @@
     <head>
         <title>Ejercicio Formulario</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="recursos/estilos.css" ><!-- comment -->
+        <link rel="stylesheet" type="text/css" href="recursos/estilos.css" >
         <script type="text/javascript" src="recursos/funciones.js"> </script>
 
     </head>
     <body>
         <h1>Ejercicio de Formulario</h1>
-        <form name="form1" action="/ManejoFormulariosHTML/Servlet" method="post" onsubmit="return validarForma(this)"> 
+        <form name="form1" action="/ManejoFormulariosHTML/Servlet" method="post" onsubmit="return validarForm(this)"> 
             <input type="hidden" name="oculto" value="valorOculto"> 
 
             <table width = "200" id="enfasis-columna" > 
@@ -32,16 +32,16 @@
 
                     </td>
                 </tr>
-                <tr> <!-- comment -->
-                    <td class="columna"> <!-- comment -->
-                        Tecnologias de Internet: (*)
+                <tr> 
+                    <td class="columna"> 
+                        Tecnologías de Internet: (*)
                     </td>
                     <td>
                         Java <input type="checkbox" name="tecnologia" value="java" />
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         .Net <input type="checkbox" name="tecnologia" value="net" />
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        .Net <input type="checkbox" name="tecnologia" value="php" />
+                        .Php <input type="checkbox" name="tecnologia" value="php" />
                     </td>
                 </tr>
                 <tr> <!-- comment -->
