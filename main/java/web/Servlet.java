@@ -55,6 +55,69 @@ public class Servlet extends HttpServlet {
                     out.print("</td>");
                 out.print("<tr>");
                 
+                
+                out.print("<tr>");
+                    out.print("<td>");
+                        out.print("Tecnologías");
+                    out.print("</td>");
+                    out.print("<td>");
+                        for (String tecnologia : tecnologias) {
+                            out.print(tecnologia);
+                            out.print(" / ");
+                        }
+                    out.print("</td>");
+                out.print("<tr>");
+                
+                out.print("<tr>");
+                    out.print("<td>");
+                        out.print("Género");
+                    out.print("</td>");
+                    out.print("<td>");
+                        out.print(genero);
+                    out.print("</td>");
+                out.print("<tr>");
+        
+                out.print("<tr>");
+                    out.print("<td>");
+                        out.print("Ocupación");
+                    out.print("</td>");
+                    out.print("<td>");
+                        out.print(ocupacion);
+                    out.print("</td>");
+                out.print("<tr>");
+                
+                /*
+                atencion aquí porque si el usuario no ha proporcionado
+                un valor de música y no hacemos la validación, tendremo
+               s un error de tipo nullPointerException
+                */
+                
+            
+                 out.print("<tr>");
+                    out.print("<td>");
+                        out.print("Música favorita");
+                    out.print("</td>");
+                    out.print("<td>");
+                    if(musica!=null){
+                        for (String m : musica) {
+                            out.print(m);
+                            out.print(" / ");
+                        }
+                    }else{
+                        out.print("no data");
+                    }     
+                    out.print("</td>");
+                out.print("<tr>"); 
+             
+                out.print("<tr>");
+                    out.print("<td>");
+                        out.print("Comentarios");
+                    out.print("</td>");
+                    out.print("<td>");
+                        out.print(comentario);
+                    out.print("</td>");
+                out.print("<tr>");
+                
             out.print("</table>");
         
         out.print("</body>");
